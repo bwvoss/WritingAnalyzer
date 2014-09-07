@@ -9,7 +9,7 @@ class TypeTokenAnalyzer:
     return len(self.words)
 
   def _unique_word_count(self):
-    return len(list(set(self._words_to_lowercase())))
+    return len(set(self._words_to_lowercase()))
 
   def _words_to_lowercase(self):
     return list(map(lambda word: word.lower(), self.words))
